@@ -1,4 +1,4 @@
-FROM ghcr.io/container-projects/base-docker-images:node-12-npm-latest
+FROM ghcr.io/container-projects/base-docker-images:node-12-npm-yo-latest
 
-# install yo
-RUN npm install -g yo
+# Install git
+RUN apt-get update && apt-get install git -y && apt-get clean
