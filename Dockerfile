@@ -1,4 +1,4 @@
-FROM ghcr.io/container-projects/base-docker-images:node-16-npm-yo-latest
+FROM ghcr.io/container-projects/base-docker-images:node-16-npm-yo-git-latest
 
 # install yo
 RUN npm install -g yo 
