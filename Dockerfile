@@ -13,6 +13,8 @@ RUN \
   tar -C /usr/local --strip-components 1 -xzf /tmp/node.tar.gz && \
   # upgrade npm
   npm install -g npm yo && \
+  # Install git
+  RUN apt-get update && apt-get install git -y && \
   # cleanup
   apt-get clean && \
   rm -rf \
