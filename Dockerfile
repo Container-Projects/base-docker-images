@@ -9,10 +9,10 @@ RUN \
     wget \
     sudo && \
   # install node.js
-  wget https://nodejs.org/dist/v12.18.4/node-v12.18.4-linux-x64.tar.gz -O /tmp/node.tar.gz && \
+  wget https://nodejs.org/dist/v16.13.0/node-v16.13.0-linux-x64.tar.xz -O /tmp/node.tar.gz && \
   tar -C /usr/local --strip-components 1 -xzf /tmp/node.tar.gz && \
   # upgrade npm
-  npm install -g npm && \
+  npm install -g npm yo && \
   # cleanup
   apt-get clean && \
   rm -rf \
