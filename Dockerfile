@@ -14,7 +14,7 @@ RUN \
   # upgrade npm
   npm install -g npm yo && \
   # Install git
-  RUN apt-get update && apt-get install git -y && \
+  apt-get update && apt-get install git -y && \
   # cleanup
   apt-get clean && \
   rm -rf \
