@@ -3,7 +3,7 @@ FROM ghcr.io/container-projects/base-docker-images:node-12-npm-latest
 # install yo
 RUN npm install -g yo 
 # install jhipster generator
-RUN npm install -g generator-jhipster@7.3.1
+RUN npm install -g generator-jhipster@7.3.0
  
 RUN \
   # configure the "jhipster" user
