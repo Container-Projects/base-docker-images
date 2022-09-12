@@ -3,7 +3,7 @@ FROM ghcr.io/container-projects/base-docker-images:node-16-npm-yo-git-latest
 # install yo
 RUN npm install -g yo 
 # install jhipster generator
-RUN npm install -g generator-jhipster@7.9.2
+RUN npm install -g generator-jhipster@7.9.3
  
 RUN \
   # configure the "jhipster" user
